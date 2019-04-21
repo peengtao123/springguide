@@ -3,3 +3,19 @@ management:
     web:
       exposure:
         include: '*'
+    jmx:
+      exposure:
+        include: '*'
+info:
+  app:
+    endcoding: 'utf8'
+logging:
+  level:
+    root: info
+  pattern:
+    dateformat:
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9000
